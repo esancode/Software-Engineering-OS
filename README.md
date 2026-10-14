@@ -37,6 +37,31 @@ Foi desenhado para **estudantes de Engenharia de Software** e desenvolvedores qu
 
 ---
 
+## 📥 Como baixar e usar no Obsidian
+
+### 1. Baixe o Obsidian
+[**🔗 Download Obsidian (Grátis)**](https://obsidian.md/download) — disponível para Windows, macOS, Linux, iOS e Android.
+
+### 2. Clone este repositório
+```bash
+# Opção A: Via terminal (recomendado)
+git clone https://github.com/SEU_USUARIO/Software-Engineering-OS.git
+
+# Opção B: Baixe o ZIP
+# 1. Clique em "Code" → "Download ZIP" neste repo
+# 2. Extraia em uma pasta de sua escolha
+```
+
+### 3. Abra no Obsidian
+1. Abra o **Obsidian**
+2. Clique em **"Abrir pasta como cofre"** (ícone de pasta aberta no canto inferior esquerdo)
+3. Selecione a pasta `Software-Engineering-OS` que você clonou/extraiu
+4. Pronto! O manual está pronto para usar 🎉
+
+> **Dica:** Marque a pasta como "Cofre confiável" se o Obsidian pedir — isso habilita todos os recursos (links internos, graph view, canvas, etc.).
+
+---
+
 ## 🚀 Como começar
 
 | Ação | Arquivo | Descrição |
@@ -144,7 +169,7 @@ flowchart LR
 
 **Resumo prático:**
 
-1. **Abra o Obsidian** neste cofre (`Software Engineering OS`)
+1. Siga o tutorial **📥 Como baixar e usar no Obsidian** acima
 2. **Comece pela nota `Início`** em `00 - Comece Aqui`
 3. **Quando tiver uma ideia**, vá para `Iniciar Novo Projeto`
 4. **Use o `Fluxo Completo`** para ver o caminho todo de uma vez
