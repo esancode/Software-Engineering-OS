@@ -276,7 +276,7 @@ const securityHeaders = [
 ```env
 # NextAuth
 NEXTAUTH_SECRET="openssl rand -base64 32"  # 32+ chars, mesmo em preview/prod
-NEXTAUTH_URL="https://app.seudominio.com"  # Canonical URL
+NEXTAUTH_URL="https://app.SEU_DOMINIO.com"  # Canonical URL
 NEXTAUTH_JWT_EXPIRY="3600"                 # 1 hora (segundos)
 NEXTAUTH_MAGIC_LINK_EXPIRY="900"           # 15 min (segundos)
 
@@ -286,8 +286,8 @@ MAX_SESSIONS_PER_USER="5"
 
 # Resend (Magic Link email)
 RESEND_API_KEY="re_..."
-EMAIL_FROM="PedidosSimples <noreply@seudominio.com>"
-MAGIC_LINK_URL="https://app.seudominio.com/auth/callback"
+EMAIL_FROM="SEU_APP <noreply@SEU_DOMINIO.com>"
+MAGIC_LINK_URL="https://app.SEU_DOMINIO.com/auth/callback"
 
 # Rate Limit (Redis/Vercel KV se necessário, ou in-memory com limitação)
 RATE_LIMIT_AUTH_MAX="30"

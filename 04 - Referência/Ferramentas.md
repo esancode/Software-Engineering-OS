@@ -167,7 +167,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         const { Resend } = await import("resend")
         const resend = new Resend(process.env.RESEND_API_KEY)
         await resend.emails.send({
-          from: "PedidosSimples <noreply@seudominio.com>",
+          from: "SEU_APP <noreply@SEU_DOMINIO.com>",
           to: identifier,
           subject: "Seu link de acesso ao PedidosSimples",
           html: `<p>Clique para entrar: <a href="${url}">${url}</a></p>`,
@@ -410,11 +410,11 @@ jobs:
     steps:
       - uses: upptime/upptime-action@v2
         with:
-          urls: "https://app.seudominio.com/api/health"
+          urls: "https://app.SEU_DOMINIO.com/api/health"
           telegram-bot-token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           telegram-chat-id: ${{ secrets.TELEGRAM_CHAT_ID }}
           # Opcional: status page
-          # owner: seu-usuario
+          # owner: SEU_USUARIO_GITHUB
           # repo: status-page
 ```
 
@@ -485,7 +485,7 @@ const resend = new Resend(process.env.RESEND_API_KEY)
 
 export async function sendMagicLink(email: string, url: string) {
   return resend.emails.send({
-    from: "PedidosSimples <noreply@seudominio.com>",
+    from: "SEU_APP <noreply@SEU_DOMINIO.com>",
     to: email,
     subject: "Seu link de acesso",
     html: `<p>Olá! Clique para entrar: <a href="${url}">${url}</a></p><p>Expira em 15 min.</p>`,

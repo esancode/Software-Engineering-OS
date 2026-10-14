@@ -212,7 +212,7 @@ WHATSAPP_WEBHOOK_VERIFY_TOKEN="meu-verify-token-seguro"
 
 # Email (Resend/SendGrid) - para Magic Link
 RESEND_API_KEY="re_..."
-EMAIL_FROM="noreply@seudominio.com"
+EMAIL_FROM="noreply@SEU_DOMINIO.com"
 
 # Optional: Tempo real v1 (SSE nativo - não precisa config)
 # PUSHER_APP_ID=""
@@ -230,7 +230,7 @@ WHATSAPP_API_TOKEN="token-staging"
 WHATSAPP_PHONE_NUMBER_ID="id-staging"
 WHATSAPP_WEBHOOK_VERIFY_TOKEN="verify-staging"
 RESEND_API_KEY="re_...staging"
-EMAIL_FROM="noreply@staging.seudominio.com"
+EMAIL_FROM="noreply@staging.SEU_DOMINIO.com"
 ```
 
 ### Produção (.env.production - na Vercel)

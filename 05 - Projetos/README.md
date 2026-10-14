@@ -9,16 +9,22 @@
 
 ### 1. Copiar a Estrutura Base
 ```bash
-# No seu workspace de projetos
-cp -r "C:\Users\Erick Vicent\Documents\03 - Conhecimento\Software Engineering OS\05 - Projetos\Template" "MeuNovoProjeto"
+# Opção A: Clone este repositório e copie a pasta Template
+git clone https://github.com/esancode/Software-Engineering-OS.git
+cp -r Software-Engineering-OS/05\ -\ Projetos/Template MeuNovoProjeto
 cd MeuNovoProjeto
+
+# Opção B: Baixe o ZIP do GitHub e extraia a pasta Template
+# 1. Acesse: https://github.com/esancode/Software-Engineering-OS
+# 2. Code → Download ZIP
+# 3. Extraia e copie a pasta 05 - Projetos/Template para onde quiser
 ```
 
 ### 2. Personalizar (Buscar/Substituir)
 Substitua **TODAS** ocorrências:
 - `PedidosSimples` → Nome do seu projeto
 - `pedidos-simples` → slug/kebab-case
-- `seudominio.com` → seu domínio
+- `SEU_DOMINIO.com` → seu domínio
 - `Loja` / `Pedido` → suas entidades principais
 
 ### 3. Inicializar Git
@@ -27,7 +33,8 @@ git init
 git add .
 git commit -m "chore: init project from Software Engineering OS template"
 git branch -M main
-git remote add origin git@github.com:seu-usuario/seu-repo.git
+# Substitua pelo seu usuário/repo real
+git remote add origin git@github.com:SEU_USUARIO/seu-repo.git
 git push -u origin main
 ```
 

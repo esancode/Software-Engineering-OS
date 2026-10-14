@@ -119,8 +119,8 @@
 |------|-------|
 | **Base URL** | `https://api.resend.com` |
 | **Auth** | Bearer Token (`RESEND_API_KEY`) |
-| **Domínio verificado** | `seu-dominio.com` (ou `onboarding@resend.dev` para teste) |
-| **From padrão** | `PedidosSimples <noreply@seu-dominio.com>` |
+| **Domínio verificado** | `SEU_DOMINIO.com` (ou `onboarding@resend.dev` para teste) |
+| **From padrão** | `SEU_APP <noreply@SEU_DOMINIO.com>` |
 
 ### Endpoints Usados
 | Operação | Endpoint | Método | Uso |
@@ -132,10 +132,10 @@
 ### Payload Magic Link
 ```json
 {
-  "from": "PedidosSimples <noreply@seu-dominio.com>",
+  "from": "SEU_APP <noreply@SEU_DOMINIO.com>",
   "to": ["joao@loja.com"],
   "subject": "Seu link de acesso ao PedidosSimples",
-  "html": "<p>Olá,<br/>Clique no link abaixo para acessar:<br/><a href=\"https://app.seudominio.com/auth/callback?token=abc123\">Acessar PedidosSimples</a><br/>Link expira em 15 minutos.</p>",
+  "html": "<p>Olá,<br/>Clique no link abaixo para acessar:<br/><a href=\"https://app.SEU_DOMINIO.com/auth/callback?token=abc123\">Acessar SEU_APP</a><br/>Link expira em 15 minutos.</p>",
   "tags": [{ "name": "type", "value": "magic_link" }]
 }
 ```

@@ -262,7 +262,7 @@ git push origin main
 ### Verificação de Saúde Pós-Mitigação
 ```bash
 # 1. Health check
-curl https://app.seudominio.com/api/health
+curl https://app.SEU_DOMINIO.com/api/health
 
 # 2. Smoke test crítico
 #    - Login

@@ -32,7 +32,7 @@
 ### Variáveis por Ambiente
 | Variável | Preview | Production | Onde |
 |----------|---------|------------|------|
-| `NEXTAUTH_URL` | `https://pr-XXX.vercel.app` | `https://app.seudominio.com` | Vercel |
+| `NEXTAUTH_URL` | `https://pr-XXX.vercel.app` | `https://app.SEU_DOMINIO.com` | Vercel |
 | `NEXTAUTH_SECRET` | Compartilhado | Compartilhado | Vercel |
 | `DATABASE_URL` | Neon branch `preview-XXX` | Neon branch `main` | Vercel |
 | `WHATSAPP_TOKEN` | Token test/sandbox | Token production | Vercel |
@@ -128,7 +128,7 @@ jobs:
     steps:
       - uses: upptime/upptime-action@v2
         with:
-          urls: "https://app.seudominio.com/api/health"
+          urls: "https://app.SEU_DOMINIO.com/api/health"
           telegram-bot-token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           telegram-chat-id: ${{ secrets.TELEGRAM_CHAT_ID }}
 ```

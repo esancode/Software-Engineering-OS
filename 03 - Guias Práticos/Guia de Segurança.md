@@ -96,7 +96,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
       sendVerificationRequest: async ({ identifier, url, provider }) => {
         // Usar Resend
         await resend.emails.send({
-          from: "PedidosSimples <noreply@seudominio.com>",
+          from: "SEU_APP <noreply@SEU_DOMINIO.com>",
           to: identifier,
           subject: "Seu link de acesso",
           html: `<a href="${url}">Entrar no PedidosSimples</a>`,

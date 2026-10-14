@@ -820,7 +820,7 @@ export function handleSummary(data) {
 AUTH_TOKEN=$(node scripts/get-auth-token.js) BASE_URL=http://localhost:3000 k6 run tests/load/dashboard.js
 
 # CI (com token de service account)
-k6 run tests/load/dashboard.js --env BASE_URL=https://app.seudominio.com --env AUTH_TOKEN=$PROD_AUTH_TOKEN
+k6 run tests/load/dashboard.js --env BASE_URL=https://app.SEU_DOMINIO.com --env AUTH_TOKEN=$PROD_AUTH_TOKEN
 ```
 
 ---
@@ -962,7 +962,7 @@ jobs:
       - uses: grafana/k6-action@v0.2.0
         with:
           filename: tests/load/dashboard.js
-          env: BASE_URL=https://app.seudominio.com AUTH_TOKEN=${{ secrets.LOAD_TEST_TOKEN }}
+          env: BASE_URL=https://app.SEU_DOMINIO.com AUTH_TOKEN=${{ secrets.LOAD_TEST_TOKEN }}
 
   quality-gate:
     needs: [unit-integration, e2e, a11y]

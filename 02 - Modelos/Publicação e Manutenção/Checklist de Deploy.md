@@ -74,7 +74,7 @@
 - [ ] Build production inicia automaticamente
 - [ ] Deploy conclui sem erros (verificar Vercel dashboard)
 - [ ] Funções deployment: todas `READY`
-- [ ] Domínio custom acessível: `https://app.seudominio.com`
+- [ ] Domínio custom acessível: `https://app.SEU_DOMINIO.com`
 - [ ] SSL válido (certificado Vercel/Let's Encrypt)
 - [ ] Health check: `GET /api/health` → 200 OK
 
@@ -118,7 +118,7 @@
 
 | Variável | Preview | Production | Onde Configurar |
 |----------|---------|------------|-----------------|
-| `NEXTAUTH_URL` | `https://pr-xxx.vercel.app` | `https://app.seudominio.com` | Vercel |
+| `NEXTAUTH_URL` | `https://pr-xxx.vercel.app` | `https://app.SEU_DOMINIO.com` | Vercel |
 | `NEXTAUTH_SECRET` | Mesmo (compartilhado) | Mesmo | Vercel (Environment Variable) |
 | `DATABASE_URL` | Neon branch `preview-xxx` | Neon branch `main` | Vercel |
 | `DIRECT_URL` | Neon branch `preview-xxx` (direct) | Neon branch `main` (direct) | Vercel |
